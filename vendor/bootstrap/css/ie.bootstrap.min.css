@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+.col-lg-3 {
+	-ms-flex:0 0 25%;
+	flex:0 0 25%;
+	max-width:24%;
+	display: inline-block;
+}
+
+.collapse:not(.show) {
+	display:inline-block;
+	float:right;
+}
+
+.nav-item {
+	margin-bottom:-1px;
+	display:inline-block;
+}
+
+.card {
+	display:inline-table;
+}
+
+.pics_row {
+	text-align:center;
+}
+
+.img-thumbnail {
+	height:120.16px;
+}
