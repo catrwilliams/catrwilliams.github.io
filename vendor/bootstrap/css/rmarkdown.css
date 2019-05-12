@@ -190,7 +190,11 @@ html {
 	background-image:none;
 	border:none;
 	text-shadow:none;
-	height:56px;
+	border-radius:0;
+}
+
+.navbar-collapse {
+	padding-left:0;
 }
 
 .navbar-brand {
@@ -199,9 +203,15 @@ html {
 
 .navbar-nav {
 	margin-right:-15px;
-	margin-top:-10px;
 	background-color:#343a40;
 	float:none;
+}
+.navbar-nav >li >a {
+	padding:10px;
+}
+
+.collapse:not(.in) {
+	display:none !important;
 }
 
 .jumbotron {
@@ -221,4 +231,12 @@ html {
 
 .tocify-extend-page {
 	height:0!important;
+}
+
+.container::before {
+	content:normal;
+}
+
+.container::after {
+	content:normal;
 }
