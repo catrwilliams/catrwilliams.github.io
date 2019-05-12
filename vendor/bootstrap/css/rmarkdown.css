@@ -206,8 +206,8 @@ html {
 	background-color:#343a40;
 	float:none;
 }
-.navbar-nav >li >a {
-	padding:10px;
+.navbar-nav >li >a, .navbar-nav >li >a:hover {
+	padding:10px 0;
 }
 
 .collapse:not(.in) {
