@@ -8,37 +8,12 @@ code{white-space: pre;}
     background-color: white;
   }
 
-
-
-
-h1 {
-  font-size: 34px;
-}
 h1.title {
-  font-size: 50px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
+  font-size: 2.5rem;
 }
 .table th:not([align]) {
   text-align: left;
 }
-
-
-
-
 
 .main-container {
   max-width: 940px;
@@ -210,7 +185,15 @@ html {
 	padding:10px 0;
 }
 
+.collapse.in {
+	display:block !important;
+}
+
 .collapse:not(.in) {
+	display:none !important;
+}
+
+.collapse:not(.show) {
 	display:none !important;
 }
 
@@ -239,4 +222,8 @@ html {
 
 .container::after {
 	content:normal;
+}
+
+.container>.navbar-collapse {
+	margin-left:0;
 }
