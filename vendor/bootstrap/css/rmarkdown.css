@@ -175,6 +175,7 @@ html {
 .navbar-brand {
 	height:auto;
 	padding-left:0!important;
+	margin-left:0!important;
 }
 
 .navbar-nav {

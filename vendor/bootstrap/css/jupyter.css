@@ -6981,9 +6981,3 @@ div#notebook {
 	div#notebook{max-width:1140px;
 	}
 }
-.collapse.show {
-	display:block!important;
-}
-.navbar-collapse.show {
-	overflow-y:auto;
-}
