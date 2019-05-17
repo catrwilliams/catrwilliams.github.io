@@ -11,9 +11,14 @@
   gtag('config', 'UA-140296842-1');
 </script>
 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Catherine Williams">
+<meta name="description" content="Jupyter report for Data Analysis class group project">
 
-<meta name="author" content="Catherine Williams" />
 <title>Work Absenteeism</title>
+
 <link rel="icon" href="favicon.ico">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
@@ -81,14 +86,14 @@
 <div>
 
   <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
+    <div id="notebook-container">
     
     <header class="jumbotron">
     <!-- Jumbotron Header -->
         <h1 class="title">Work Absenteeism</h1>
         <h4 class="author">Catherine Williams &amp; Others</h4>
         <h4 class="date">March 29, 2019</h4>
-        <h5><i>Class Group Project competition</i></h5>
+        <h5><i>Class Group Project</i></h5>
 </div>
 <div class="jumbotron"> <!-- Add div around all page contents -->
 
@@ -107,7 +112,8 @@ This includes:</p>
 <li>Compare the performance of your models</li>
 <li>Include a written analysis of your prediction referencing using data to support your conclusions.</li>
 </ul>
-<p>You are welcome and encouraged to go above and beyond these requirements, just be sure these requirements are fully met first.</p>
+<h1>Dataset</h1>
+<p>Data came from the UCI Machine Learning Repository. The data contains records of absenteeism at work for a courier company in Brazil.</p>
 
 </div>
 </div>
@@ -116,6 +122,7 @@ This includes:</p>
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
+<h1 id="Setup">Setup<a class="anchor-link" href="#Setup">&#182;</a></h1>
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># Load libraries</span>
 <span class="kn">library</span><span class="p">(</span>lubridate<span class="p">)</span>
@@ -25642,7 +25649,7 @@ mean of x mean of y
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="As-p-value-of-the-t-test-is-greater-than-0.05,-we-cannot-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-there-is-no-statistically-significant-difference-of-average-absenteeism-hours-between-people-with-undergrad-and-graduate-degrees.">As p-value of the t-test is greater than 0.05, we cannot reject the null hypothesis. Which means, according to these samples of the whole population, there is no statistically significant difference of average absenteeism hours between people with undergrad and graduate degrees.<a class="anchor-link" href="#As-p-value-of-the-t-test-is-greater-than-0.05,-we-cannot-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-there-is-no-statistically-significant-difference-of-average-absenteeism-hours-between-people-with-undergrad-and-graduate-degrees.">&#182;</a></h4>
+<p id="As-p-value-of-the-t-test-is-greater-than-0.05,-we-cannot-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-there-is-no-statistically-significant-difference-of-average-absenteeism-hours-between-people-with-undergrad-and-graduate-degrees.">As p-value of the t-test is greater than 0.05, we cannot reject the null hypothesis. Which means, according to these samples of the whole population, there is no statistically significant difference of average absenteeism hours between people with undergrad and graduate degrees.<a class="anchor-link" href="#As-p-value-of-the-t-test-is-greater-than-0.05,-we-cannot-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-there-is-no-statistically-significant-difference-of-average-absenteeism-hours-between-people-with-undergrad-and-graduate-degrees.">&#182;</a></p>
 </div>
 </div>
 </div>
@@ -25702,7 +25709,7 @@ mean of x mean of y
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="As-p-value-of-the-t-test-is-smaller-than-0.05,-we-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-the-average-absenteeism-hours-of-those-with-high-school-degrees-is-higher-than-people-with-graduate-degrees">As p-value of the t-test is smaller than 0.05, we reject the null hypothesis. Which means, according to these samples of the whole population, the average absenteeism hours of those with high school degrees is higher than people with graduate degrees<a class="anchor-link" href="#As-p-value-of-the-t-test-is-smaller-than-0.05,-we-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-the-average-absenteeism-hours-of-those-with-high-school-degrees-is-higher-than-people-with-graduate-degrees">&#182;</a></h4>
+<p id="As-p-value-of-the-t-test-is-smaller-than-0.05,-we-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-the-average-absenteeism-hours-of-those-with-high-school-degrees-is-higher-than-people-with-graduate-degrees">As p-value of the t-test is smaller than 0.05, we reject the null hypothesis. Which means, according to these samples of the whole population, the average absenteeism hours of those with high school degrees is higher than people with graduate degrees<a class="anchor-link" href="#As-p-value-of-the-t-test-is-smaller-than-0.05,-we-reject-the-null-hypothesis.-Which-means,-according-to-these-samples-of-the-whole-population,-the-average-absenteeism-hours-of-those-with-high-school-degrees-is-higher-than-people-with-graduate-degrees">&#182;</a></p>
 </div>
 </div>
 </div>
@@ -31575,7 +31582,7 @@ dgAAAAAZAo0dAAAAQIb4B5F/lGyTKaDBAAAAAElFTkSuQmCC"
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Variables-Mutation-and-Normarlization">Variables Mutation and Normarlization<a class="anchor-link" href="#Variables-Mutation-and-Normarlization">&#182;</a></h3>
+<h3 id="Variables-Mutation-and-Normarlization">Variable Mutation and Normalization<a class="anchor-link" href="#Variables-Mutation-and-Normarlization">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -40384,7 +40391,7 @@ CjsAAAAAN/EXG1tXoDmxpHoAAAAASUVORK5CYII="
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Compared-with-the-above-groups-of-charts,-Absenteeism_hours.sqr-is-more-symmetric-than-Absenteeism_hours,-so-we-will-use-Absenteeism_hours.sqr-as-our-label.-Others-variables-do-not-have-significant-changes-after-mutatation-so-we-will-try-modeling-with-the-different-variations.">Compared with the above groups of charts, Absenteeism_hours.sqr is more symmetric than Absenteeism_hours, so we will use Absenteeism_hours.sqr as our label. Others variables do not have significant changes after mutatation so we will try modeling with the different variations.<a class="anchor-link" href="#Compared-with-the-above-groups-of-charts,-Absenteeism_hours.sqr-is-more-symmetric-than-Absenteeism_hours,-so-we-will-use-Absenteeism_hours.sqr-as-our-label.-Others-variables-do-not-have-significant-changes-after-mutatation-so-we-will-try-modeling-with-the-different-variations.">&#182;</a></h4>
+<p id="Compared-with-the-above-groups-of-charts,-Absenteeism_hours.sqr-is-more-symmetric-than-Absenteeism_hours,-so-we-will-use-Absenteeism_hours.sqr-as-our-label.-Others-variables-do-not-have-significant-changes-after-mutatation-so-we-will-try-modeling-with-the-different-variations.">Compared with the above groups of charts, Absenteeism_hours.sqr is more symmetric than Absenteeism_hours, so we will use Absenteeism_hours.sqr as our label. Others variables do not have significant changes after mutatation so we will try modeling with the different variations.<a class="anchor-link" href="#Compared-with-the-above-groups-of-charts,-Absenteeism_hours.sqr-is-more-symmetric-than-Absenteeism_hours,-so-we-will-use-Absenteeism_hours.sqr-as-our-label.-Others-variables-do-not-have-significant-changes-after-mutatation-so-we-will-try-modeling-with-the-different-variations.">&#182;</a></p>
 </div>
 </div>
 </div>
@@ -50238,7 +50245,7 @@ AEAkUNgBAAAAiAQKOwAAAACR+Ane0i+bK2Pn/QAAAABJRU5ErkJggg=="
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Model-1">Model 1<a class="anchor-link" href="#Model-1">&#182;</a></h1>
+<h2 id="Model-1">Model 1<a class="anchor-link" href="#Model-1">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -50305,7 +50312,7 @@ F-statistic: 5.073 on 5 and 586 DF,  p-value: 0.0001459
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Model-2">Model 2<a class="anchor-link" href="#Model-2">&#182;</a></h1>
+<h2 id="Model-2">Model 2<a class="anchor-link" href="#Model-2">&#182;</a></h2>
 </div>
 </div>
 </div>

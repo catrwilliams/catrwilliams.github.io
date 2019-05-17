@@ -157,73 +157,6 @@ th {
   padding: 0;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    text-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  .label {
-    border: 1px solid #000;
-  }
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important;
-  }
-}
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
 input,
 select,
 textarea {
@@ -233,12 +166,6 @@ textarea {
 }
 figure {
   margin: 0;
-}
-hr {
-  margin-top: 18px;
-  margin-bottom: 18px;
-  border: 0;
-  border-top: 1px solid #eeeeee;
 }
 .sr-only {
   position: absolute;
@@ -2737,67 +2664,14 @@ a.thumbnail.active {
 .visible-print {
   display: none !important;
 }
-@media print {
-  .visible-print {
-    display: block !important;
-  }
-  table.visible-print {
-    display: table !important;
-  }
-  tr.visible-print {
-    display: table-row !important;
-  }
-  th.visible-print,
-  td.visible-print {
-    display: table-cell !important;
-  }
-}
 .visible-print-block {
   display: none !important;
-}
-@media print {
-  .visible-print-block {
-    display: block !important;
-  }
 }
 .visible-print-inline {
   display: none !important;
 }
-@media print {
-  .visible-print-inline {
-    display: inline !important;
-  }
-}
 .visible-print-inline-block {
   display: none !important;
-}
-@media print {
-  .visible-print-inline-block {
-    display: inline-block !important;
-  }
-}
-@media print {
-  .hidden-print {
-    display: none !important;
-  }
-}
-/*!
-*
-* Font Awesome
-*
-*/
-/*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-/* FONT PATH
- * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 .fa {
   display: inline-block;
@@ -4745,11 +4619,6 @@ body > #header {
   width: 100%;
   visibility: hidden;
 }
-@media print {
-  #header-spacer {
-    display: none;
-  }
-}
 #ipython_notebook {
   padding-left: 0px;
   padding-top: 1px;
@@ -4782,11 +4651,6 @@ body > #header {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   overflow: auto;
-}
-@media print {
-  #site {
-    height: auto !important;
-  }
 }
 #header > span {
   margin-top: 10px;
@@ -5177,29 +5041,6 @@ ul#new-menu {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-@media not print {
-  #texteditor-backdrop {
-    background-color: #EEE;
-  }
-}
-@media print {
-  #texteditor-backdrop #texteditor-container .CodeMirror-gutter,
-  #texteditor-backdrop #texteditor-container .CodeMirror-gutters {
-    background-color: #fff;
-  }
-}
-@media not print {
-  #texteditor-backdrop #texteditor-container .CodeMirror-gutter,
-  #texteditor-backdrop #texteditor-container .CodeMirror-gutters {
-    background-color: #fff;
-  }
-}
-@media not print {
-  #texteditor-backdrop #texteditor-container {
-    padding: 0px;
-    background-color: #fff;
-  }
-}
 /*!
 *
 * IPython notebook
@@ -5282,12 +5123,9 @@ div.cell {
   border-style: solid;
   border-color: transparent;
   width: 100%;
-  padding: 5px;
-  /* This acts as a spacer between cells, that is outside the border */
   margin: 0px;
   outline: none;
   border-left-width: 1px;
-  padding-left: 5px;
   background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
 }
 div.cell.jupyter-soft-selected {
@@ -5299,21 +5137,11 @@ div.cell.jupyter-soft-selected {
   border-right-width: 1px;
   background: #E3F2FD;
 }
-@media print {
-  div.cell.jupyter-soft-selected {
-    border-color: transparent;
-  }
-}
 div.cell.selected {
   border-color: #ababab;
   border-left-width: 0px;
   padding-left: 6px;
   background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
-}
-@media print {
-  div.cell.selected {
-    border-color: transparent;
-  }
 }
 div.cell.selected.jupyter-soft-selected {
   border-left-width: 0;
@@ -5325,11 +5153,6 @@ div.cell.selected.jupyter-soft-selected {
   border-left-width: 0px;
   padding-left: 6px;
   background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
-}
-@media print {
-  .edit_mode div.cell.selected {
-    border-color: transparent;
-  }
 }
 .prompt {
   /* This needs to be wide enough for 3 digit prompt numbers: In[100]: */
@@ -5433,11 +5256,6 @@ div.unrecognized_cell .inner_cell a:hover {
 }
 div.code_cell {
   /* avoid page breaking on code cells when printing */
-}
-@media print {
-  div.code_cell {
-    page-break-inside: avoid;
-  }
 }
 /* any special styling for code cells that are currently running goes here */
 div.input {
@@ -6030,11 +5848,6 @@ p {
   min-height: 100px;
   transition: height .2s ease;
 }
-@media not print {
-  .notebook_app {
-    background-color: #EEE;
-  }
-}
 kbd {
   border-style: solid;
   border-width: 1px;
@@ -6074,11 +5887,6 @@ kbd {
   /* Modern browsers */
   justify-content: flex-end;
   display: -webkit-flex;
-}
-@media print {
-  .celltoolbar {
-    display: none;
-  }
 }
 .ctb_hideshow {
   display: none;
@@ -7173,20 +6981,9 @@ div#notebook {
 	div#notebook{max-width:1140px;
 	}
 }
-
-
-@media print {
-  div.cell {
-    display: block;
-    page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
-  }
-  div.output { 
-    display: block;
-    page-break-inside: avoid; 
-  }
+.collapse.show {
+	display:block!important;
 }
-
+.navbar-collapse.show {
+	overflow-y:auto;
+}
